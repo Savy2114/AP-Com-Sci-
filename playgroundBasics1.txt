@@ -26,3 +26,14 @@
 
 (300 + 500 + 400) / (6 / 2)
 
+//page 4
+// This is a comment; it does not affect the code
+
+//34 + 56 + 230
+
+// amount edged
+
+//page 6
+1000 / 10
+
+2 + 2
