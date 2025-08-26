@@ -1,4 +1,4 @@
-// page 2
+//page 2
 // Number Of Dogs
 5
 
@@ -14,7 +14,7 @@
 // Total Number Of Mammals
 5 + 4
 
-// page 3
+//page 3
 // Number Of Dogs
 6
 
@@ -33,7 +33,7 @@
 // Total Number Of Mammals
 6 + 5 + 1
 
-// page 4
+//page 4
 let numberOfDogs = 6
 
 let numberOfCats = 5
@@ -46,7 +46,7 @@ let totalNumberOfAnimals = numberOfDogs + numberOfCats + numberOfTurtles + numbe
 
 let totalNumberOfMammals = numberOfDogs + numberOfCats + numberOfHamsters
 
-// page 6
+//page 6
 let numberOfDogs = 6 + 2
 
 let numberOfCats = 5 - 1
@@ -59,7 +59,7 @@ let totalNumberOfAnimals = numberOfDogs + numberOfCats + numberOfTurtles + numbe
 
 let totalNumberOfMammals = numberOfDogs + numberOfCats + numberOfHamsters
 
-// page 7
+//page 7
 let 🐶 = 8
 let 🐱 = 4
 let 🐹 = 2
@@ -72,10 +72,10 @@ let totalNumberOfAnimals = 🐶 + 🐱 + 🐹 + 🐢 + 🐍 + 🐷 + 🐟
 
 let totalNumberOfMammals = 🐶 + 🐱 + 🐹 + 🐷
 
-// page 8 
+//page 8 
 let numberOfDogs = 101
 
-// page 10
+//page 10
 // Number Of Tickets
 150
 
@@ -99,7 +99,7 @@ let numberOfDogs = 101
 
 let numberOfTickets = 150
 
-// page 11
+//page 11
 // Values you should edit
 let ticketsSold = 1000
 let ticketPrice = 1
@@ -122,10 +122,10 @@ let profit = totalTakings - jackpot - totalExpenses
 let programmersCut = profit / 10 // This is the answer you want to get > 100! 👉 
 let friendsCut = profit - programmersCut
 
-// page 13
+//page 13
 let brushTeeth = 3
 
-// page 14 
+//page 14 
 let oc = 14
 let wc = 3
 let ow = 100
