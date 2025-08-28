@@ -1,0 +1,142 @@
+//page 3
+let heightInCentimeters = 7817
+
+let favoriteBook = "The Sun Also Rises"
+
+let traditionalGreeting = "Hello, world!"
+
+// Declare a favoriteMovie constant
+
+// Declare a favoriteSong constant
+
+
+//page 4
+let englishGreeting = "Hello, World!"
+
+let chineseGreeting = "你好，世界!"
+
+let spanishGreeting = "¡Hola Mundo!"
+
+let russianGreeting = "Привет мир!"
+
+let japaneseGreeting = "こんにちは世界!"
+
+// Constant name in Chinese that means 'English Greeting'
+let 英语问候 = "Hello, World!"
+
+// Constant name in French that means 'English Greeting'
+let salutationAnglais = "Hello, World!"
+
+let welcomingPhrase = "Welcome! 😀"
+let fruitSalad = "🍓🍏🍒🍐🍇🍉🥭🥥🍊"
+
+//page 6
+// This might change over time
+let username = "Chris"
+
+// This part of the message will get reused
+let likesYourPostMessage = "likes your post"
+
+// Concatenate strings by using the plus sign
+let finishedMessage = username + " " + likesYourPostMessage
+
+//page 7 
+let fullName = "Johnny" + "Appleseed"
+
+let firstName = "Tara"
+let city = "Paris"
+let welcomeString = "Hello " + firstName + ", welcome to " + city + "!"
+
+//page 8
+let firstName = "Tim"
+let city = "Cupertino"
+
+let welcomeString = "Hello \(firstName), welcome to \(city)"
+
+// Change this to your favorite food
+let favoriteFood = "pie"
+
+// Change this to why you like it
+let reason = "tasty"
+
+//page 9 
+let spelledOutNumber = "six"
+let meal = "breakfast"
+let aliceQuotation = "Why, sometimes I’ve believed as many as \(spelledOutNumber) impossible things before \(meal)!"
+
+//page 10 
+let hitterName = "Savy"
+let firstInning = 3
+let secondInning = 6
+let fullGame = 2
+let hittingReportString = "At the game yesterday, \(hitterName) had \(firstInning) saves in the first half, \(secondInning) in the second half and \(fullGame) saves in overtime, for a total of \(firstInning + secondInning + fullGame) saves."
+
+//page 11
+let stringWithQuotationMarks = "He said, \"Hi there!\" as he passed by."
+
+//page 12 
+// The backslash followed by a quotation mark is an escape sequence.
+let favoriteQuotation = "Hamlet said, \"To be, or not to be?\""
+
+// Another escape sequence is the placeholder in an interpolated string.
+let flavor = "chocolate"
+let iceCreamAnnouncement = "The flavor of the day is \(flavor)"
+
+let startOfAPoem = "Roses are red.\nViolets are blue."
+
+//page 14
+let constants = "Declaring string constants"
+let unicode = "Unicode characters (😎)"
+let combining = "Combining strings using +"
+let interpolation = "String interpolation (aka Fill in the Blanks)"
+let escaping = "Escape characters for \"special powers\""
+let newline = "Making new lines"
+
+//page 15 
+let customerOrderOne = "fish"
+let customerOrderTwo = "risotto"
+let customerOrderThree = "soup"
+
+let serverResponseToTableOne = "Let me make sure I've got this right: fish, risotto, and soup. Is that everything?"
+
+let tableOneResponse = "Yes, thank you!"
+
+let customerOrderFour = "돌솥비빔밥"
+let customerOrderFive = "Pasztecik szczeciński"
+let customerOrderSix = "小笼包"
+
+let serverResponseToTableTwo = "Let me make sure I've got this right: <Enter the order here>"
+
+let tableTwoResponse = "Perfect, merci bien."
+
+//page 16 
+let schoolName = "YOUR SCHOOL NAME"
+let refrain = "hmm hmm HMMM hm-hmm \(schoolName) hmm hmm HMMMMM"
+
+let song = "\(refrain)\n\(refrain)\nYes, \(refrain)"
+
+//page 18
+"Hello, world!"
+print("Hello, world!")
+
+8
+print(8)
+7 + 11
+print(7 + 11)
+
+"Have you seen" + "..." + "nevermind."
+print("Have you seen" + "..." + "nevermind.")
+
+let authorName = "Beatrix Potter"
+print(authorName)
+let bookTitle = "Jemima Puddleduck"
+print(bookTitle)
+
+var favoriteCookie = "chocolate chip"
+print("My favorite type of cookie is \(favoriteCookie).")
+favoriteCookie = "double chocolate chip"
+print("Wait! I forgot about \(favoriteCookie). That one is even better.")
+
+authorName
+"authorName"
+"Did you know that \(bookTitle) was written by \(authorName)?"
