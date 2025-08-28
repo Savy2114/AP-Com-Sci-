@@ -1,0 +1,26 @@
+//page 2 
+startSimulation()
+
+//page 3
+numberOfAnts = 10
+antSpeed = 15
+
+//page 4 
+environmentCellSize = 20
+numberOfAnts = 167
+pheromoneEvaporationRate = 41
+pheromoneDepositRate = 41
+
+//page 5
+startSimulation()
+
+//homePheromoneDepositRate = 100
+//foodPheromoneDepositRate = 100
+//homePheromoneEvaporationRate = 50
+//foodPheromoneEvaporationRate = 50
+
+//environmentCellSize = 10
+//numberOfAnts = 100
+
+//numberOfAnts = 20
+//antSpeed = 150
