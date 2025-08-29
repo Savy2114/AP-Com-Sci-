@@ -1,0 +1,99 @@
+//page 1 
+let city = "Paris"
+
+//page 3
+// Declaring a constant
+let placeOfBirth = "Texas"
+
+// Declaring a variable
+var currentLocation = "Texas"
+
+currentLocation = "California"
+
+currentLocation = "California"
+  
+//page 5
+var score = 0
+
+// Take the current value of `score`, add 2, assign the result to `score` as its new value
+score = score + 2
+
+var greeting = ""
+greeting += "Hello"
+greeting += " "
+greeting += "World"
+
+let word1 = "Compound"
+let word2 = "assignment"
+let word3 = "is"
+let word4 = "useful"
+let space = " "
+
+var statement = ""
+statement += word1
+
+var powerOfTwo = 1
+
+//page 7 
+var name = "Johnny"
+name = "Johnny"
+
+//page 9 
+var friendBeverageChoice = "coffee"
+
+driveAcrossTown()
+buyACoffeeMaker()
+
+friendBeverageChoice = "tea"
+
+findCoffeeGrinder()
+
+friendBeverageChoice = "water"
+friendBeverageChoice = "sparkling water"
+friendBeverageChoice = "plain water"
+
+findCoffeeBeans()
+driveHome()
+setUpCoffeeGrinder()
+
+friendBeverageChoice = "nothing 😴"
+grindBeans()
+makeFriendDrinkCoffee()
+
+//page 10
+// Scores for each target
+var scoreForGreen = 5
+var scoreForRed = 10
+var scoreForGold = 20
+
+// Player scores
+var scoreForGary = 0
+var scoreForRob = 0
+
+// Game events here
+scoreForGary += scoreForRed
+scoreForGary += scoreForGreen
+scoreForGary += scoreForGold
+
+scoreForRob += scoreForRed
+scoreForRed += scoreForGreen
+scoreForRob += scoreForGold
+
+scoreForGary += scoreForRed
+scoreForGary += scoreForGreen
+scoreForGary += scoreForGold
+
+scoreForRob += scoreForRed
+scoreForRob += scoreForGreen
+scoreForRob += scoreForGold
+
+scoreForRob
+scoreForGary
+
+//page 12 
+let eggs = "Eggs"
+let milk = "Milk"
+let cheese = "Cheese"
+let bread = "Bread"
+let rice = "Rice"
+let newLine = "\n"
