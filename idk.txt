@@ -1,0 +1,71 @@
+const city = "Paris";
+// Declaring a constant
+const placeOfBirth = "Texas";
+
+// Declaring a variable
+let currentLocation = "Texas";
+currentLocation = "California";
+currentLocation = "California"; // Repeated assignment
+let score = 0;
+score += 2;  // Compound assignment
+
+let greeting = "Hello" + " " + "World";
+
+const word1 = "Compound";
+const word2 = "assignment";
+const word3 = "is";
+const word4 = "useful";
+const space = " ";
+
+let statement = word1;  // Could also concatenate others if needed
+
+let powerOfTwo = 1;
+let name = "Johnny";
+name = "Johnny"; // No change, same value reassigned
+let friendBeverageChoice = "coffee";
+
+driveAcrossTown();
+buyACoffeeMaker();
+
+friendBeverageChoice = "tea";
+
+findCoffeeGrinder();
+
+friendBeverageChoice = "water";
+friendBeverageChoice = "sparkling water";
+friendBeverageChoice = "plain water";
+
+findCoffeeBeans();
+driveHome();
+setUpCoffeeGrinder();
+
+friendBeverageChoice = "nothing 😴";
+
+grindBeans();
+makeFriendDrinkCoffee();
+const scoreForGreen = 5;
+let scoreForRed = 10;
+const scoreForGold = 20;
+
+let scoreForGary = 0;
+let scoreForRob = 0;
+
+// Game events
+scoreForGary += scoreForRed + scoreForGreen + scoreForGold;
+
+scoreForRob += scoreForRed;
+scoreForRed += scoreForGreen;  // Changing red score value mid-game
+scoreForRob += scoreForGold;
+
+scoreForGary += scoreForRed + scoreForGreen + scoreForGold;
+
+scoreForRob += scoreForRed + scoreForGreen + scoreForGold;
+
+scoreForRob;
+scoreForGary;
+const eggs = "Eggs";
+const milk = "Milk";
+const cheese = "Cheese";
+const bread = "Bread";
+const rice = "Rice";
+const newLine = `\n`;
