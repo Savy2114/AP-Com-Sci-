@@ -1,71 +1,97 @@
-const city = "Paris";
-// Declaring a constant
-const placeOfBirth = "Texas";
+//page 1
+const destinationCity = "Tokyo";
 
-// Declaring a variable
-let currentLocation = "Texas";
-currentLocation = "California";
-currentLocation = "California"; // Repeated assignment
-let score = 0;
-score += 2;  // Compound assignment
+//page 3
+// Defining birthplace
+const birthPlace = "Florida";
 
-let greeting = "Hello" + " " + "World";
+// Tracking current state
+let currentState = "Florida";
+currentState = "Nevada";
+currentState = "Nevada"; // Still in Nevada
 
-const word1 = "Compound";
-const word2 = "assignment";
-const word3 = "is";
-const word4 = "useful";
-const space = " ";
+//page 5
+let playerScore = 0;
+playerScore += 2;  // Add points
 
-let statement = word1;  // Could also concatenate others if needed
+let welcomeMessage = "";
+welcomeMessage += "Hi";
+welcomeMessage += ", ";
+welcomeMessage += "Universe!";
 
-let powerOfTwo = 1;
-let name = "Johnny";
-name = "Johnny"; // No change, same value reassigned
-let friendBeverageChoice = "coffee";
+const part1 = "Learning";
+const part2 = "to";
+const part3 = "code";
+const part4 = "rocks";
+const gap = " ";
 
-driveAcrossTown();
-buyACoffeeMaker();
+let fullSentence = "";
+fullSentence += part1;
 
-friendBeverageChoice = "tea";
+let multiplier = 1;
 
-findCoffeeGrinder();
+//page 7
+let nickname = "Sammy";
+nickname = "Sammy"; // Reassigned same value
 
-friendBeverageChoice = "water";
-friendBeverageChoice = "sparkling water";
-friendBeverageChoice = "plain water";
+//page 9 
+let guestDrinkPreference = "juice";
 
-findCoffeeBeans();
-driveHome();
-setUpCoffeeGrinder();
+goToStore();
+purchaseJuicer();
 
-friendBeverageChoice = "nothing 😴";
+guestDrinkPreference = "smoothie";
 
-grindBeans();
-makeFriendDrinkCoffee();
-const scoreForGreen = 5;
-let scoreForRed = 10;
-const scoreForGold = 20;
+locateFruitBasket();
 
-let scoreForGary = 0;
-let scoreForRob = 0;
+guestDrinkPreference = "water";
+guestDrinkPreference = "sparkling lemonade";
+guestDrinkPreference = "plain soda";
 
-// Game events
-scoreForGary += scoreForRed + scoreForGreen + scoreForGold;
+buyFreshFruits();
+returnHome();
+assembleJuicer();
 
-scoreForRob += scoreForRed;
-scoreForRed += scoreForGreen;  // Changing red score value mid-game
-scoreForRob += scoreForGold;
+guestDrinkPreference = "none 💤";
 
-scoreForGary += scoreForRed + scoreForGreen + scoreForGold;
+blendFruits();
+serveDrinkToGuest();
 
-scoreForRob += scoreForRed + scoreForGreen + scoreForGold;
+//page 10 
+const pointsGreen = 5;
+let pointsRed = 10;
+const pointsGold = 20;
 
-scoreForRob;
-scoreForGary;
-const eggs = "Eggs";
-const milk = "Milk";
-const cheese = "Cheese";
-const bread = "Bread";
-const rice = "Rice";
-const newLine = `\n`;
+let alexScore = 0;
+let taylorScore = 0;
+
+// Round 1
+alexScore += pointsRed;
+alexScore += pointsGreen;
+alexScore += pointsGold;
+
+// Round 2
+taylorScore += pointsRed;
+pointsRed += pointsGreen;  // Increase red score
+taylorScore += pointsGold;
+
+// Round 3
+alexScore += pointsRed;
+alexScore += pointsGreen;
+alexScore += pointsGold;
+
+// Round 4
+taylorScore += pointsRed;
+taylorScore += pointsGreen;
+taylorScore += pointsGold;
+
+taylorScore;
+alexScore;
+
+//page 12
+const apples = "Apples";
+const yogurt = "Yogurt";
+const butter = "Butter";
+const pasta = "Pasta";
+const quinoa = "Quinoa";
+const lineBreak = "\n";
