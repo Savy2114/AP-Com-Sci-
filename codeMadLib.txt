@@ -1,0 +1,35 @@
+import Foundation
+
+// User-provided words
+let adjective1 = "Glamorous"
+let adjective2 = "Happy"
+let noun1 = "Beach"
+let noun2 = "Mountain"
+let pluralNoun1 = "Pink convertibles"
+let game = "Softball"
+let pluralNoun2 = "Deers"
+let verbIng1 = "Shopping"
+let verbIng2 = "Tanning"
+let pluralNoun3 = "Sandwiches"
+let verbIng3 = "Relaxing"
+let noun3 = "Sandbox"
+let plant = "Ivy"
+let bodyPart = "Face"
+let place = "Beach"
+let verbIng4 = "Swimming"
+let adjective3 = "Itchy"
+let number = 24
+let pluralNoun4 = "Quarters"
+
+// Mad Libs Vacation Story
+let madLibStory = """
+A vacation is when you take a trip to some \(adjective1) place with your \(adjective2) family. Usually you go to some place that is near a/an \(noun1) or up on a/an \(noun2).
+A good vacation place is one where you can ride \(pluralNoun1) or play \(game) or go hunting for \(pluralNoun2). I like to spend my time \(verbIng1) or \(verbIng2).
+When parents go on a vacation, they spend their time eating three \(pluralNoun3) a day, and fathers play golf, and mothers sit around \(verbIng3).
+Last summer, my little brother fell in a/an \(noun3) and got poison \(plant) all over his \(bodyPart).
+My family is going to go to (the) \(place), and I will practice \(verbIng4).
+Parents need vacations more than kids because parents are always very \(adjective3) and because they have to work \(number) hours every day all year making enough \(pluralNoun4) to pay for the vacation.
+"""
+
+// Print the completed story
+print(madLibStory)
