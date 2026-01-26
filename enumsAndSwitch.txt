@@ -1,1 +1,281 @@
+//page 2
+func cookLunch(choice: String) -> String {
+    if choice == "pasta" {
+        return "🍝"
+    } else if choice == "burger" {
+        return "🍔"
+    } else {
+        return "🌮"
+    }
+}
+cookLunch(choice: "pasta")     // 🍝
+cookLunch(choice: "burger")    // 🍔
+cookLunch(choice: "taco")      // 🌮
+
+//page 3
+enum LunchChoice {
+    case pasta
+    case burger
+    case soup
+}
+let savy = LunchChoice.pasta
+let madi = LunchChoice.burger
+let rosa = LunchChoice.soup
+
+//page 4
+enum LunchChoice {
+    case pasta, burger, soup
+}
+var choice: LunchChoice = .burger
+choice = .pasta
+choice = .soup
+
+//page 5
+enum Team {
+    case red
+    case blue
+}
+enum Position {
+    case quarterback
+    case seeker
+    case pitcher
+}
+
+//page 6
+enum LunchChoice { case pasta, burger, soup }
+var myLunch = LunchChoice.burger
+let yourLunch = LunchChoice.burger
+if myLunch == yourLunch {
+    "We're having the same for lunch!"
+} else {
+    "Can I try your lunch?"
+}
+
+//page 7
+enum LunchChoice { case pasta, burger, soup }
+func cookLunch(_ choice: LunchChoice) -> String {
+    if choice == .pasta { return "🍝" }
+    else if choice == .burger { return "🍔" }
+    else { return "🍲" }
+}
+cookLunch(.pasta)   // 🍝
+cookLunch(.burger)  // 🍔
+cookLunch(.soup)    // 🍲
+
+//page 8
+enum LunchChoice { case pasta, burger, soup }
+func cookLunch(_ choice: LunchChoice) -> String {
+    if choice == .pasta { return "🍝" }
+    else if choice == .burger { return "🍔" }
+    else if choice == .soup { return "🍲" }
+    return "Um... how did we get here?"
+}
+
+//page 10
+enum LunchChoice { case pasta, burger, soup, taco }
+let choice = LunchChoice.burger
+switch choice {
+case .pasta:
+    "🍝"
+case .burger:
+    "🍔"
+case .soup:
+    "🍲"
+case .taco:
+    "🌮"
+}
+
+//page 11
+enum Quality { case bad, poor, acceptable, good, great }
+var quality = Quality.good
+switch quality {
+case .bad:
+    print("That really won't do")
+case .poor:
+    print("That's not good enough")
+default:
+    print("OK, I'll take it")
+}
+quality = .bad        
+quality = .poor      
+quality = .acceptable 
+quality = .good       
+quality = .great      
+
+//page 12
+enum Quality { case bad, poor, acceptable, good, great, terrible }
+let quality = Quality.good
+switch quality {
+case .terrible:
+    print("Absolutely not.")
+case .bad:
+    print("That really won't do")
+case .poor:
+    print("That's not good enough")
+case .acceptable, .good, .great:
+    print("OK, I'll take it")
+}
+
+//page 13
+let animal = "cat"
+func soundFor(animal: String) -> String {
+    switch animal {
+    case "cat":
+        return "Meow!"
+    case "dog":
+        return "Woof!"
+    default:
+        return "I don't know that animal."
+    }
+}
+soundFor(animal: "cat")      // Meow!
+soundFor(animal: "dog")      // Woof!
+soundFor(animal: "cow")      // I don't know that animal.
+soundFor(animal: "turtle")   // I don't know that animal.
+func soundFor2(animal: String) -> String {
+    switch animal {
+    case "cat": return "Meow!"
+    case "dog": return "Woof!"
+    case "cow": return "Moo!"
+    case "duck": return "Quack!"
+    case "lion": return "Roar!"
+    default: return "I don't know that animal."
+    }
+}
+soundFor2(animal: "cow")   // Moo!
+soundFor2(animal: "duck")  // Quack!
+
+//page 15
+enum Suit {
+    case spades, hearts, diamonds, clubs
+    var rank: Int {
+        switch self {
+        case .spades: return 4
+        case .hearts: return 3
+        case .diamonds: return 2
+        case .clubs: return 1
+        }
+    }
+    func beats(_ otherSuit: Suit) -> Bool {
+        return self.rank > otherSuit.rank
+    }
+    var emoji: String {
+        switch self {
+        case .spades: return "♠️"
+        case .hearts: return "♥️"
+        case .diamonds: return "♦️"
+        case .clubs: return "♣️"
+        }
+    }
+}
+let oneSuit = Suit.spades
+let otherSuit = Suit.clubs
+oneSuit.beats(otherSuit)     // true
+oneSuit.emoji                // ♠️
+otherSuit.emoji              // ♣️
+
+//page 17
+enum CompassDirection {
+    case north, east, south, west
+}
+enum PuzzlePiece {
+    case corner, edge, middle
+}
+enum PlaybackMode {
+    case standard
+    case repeatOne
+    case repeatAll
+    case shuffle
+}
+
+//page 18
+var chickenOfInterestCount = 0
+for chicken in chickens {
+    if chicken.temper == .hilarious && chicken.breed == .leghorns {
+        chickenOfInterestCount += 1
+    }
+}
+
+//page 19
+enum Weapon {
+    case none
+    case sword
+    case rubberMallet
+    case bow
+}
+struct Enemy {
+    let strength: Int
+    let speed: Int
+    let weapon: Weapon
+}
+let e1 = Enemy(strength: 10, speed: 5, weapon: .none)
+let e2 = Enemy(strength: 20, speed: 7, weapon: .sword)
+
+//page 20
+enum ClassTripDestination {
+    case beach, chocolateFactory
+}
+var beachCount = 0
+var chocolateCount = 0
+for vote in tripDestinationVotes {
+    if vote == .beach { beachCount += 1 }
+    else { chocolateCount += 1 }
+}
+if beachCount > chocolateCount {
+    "Beach wins!"
+} else if chocolateCount > beachCount {
+    "Chocolate factory wins!"
+} else {
+    "It's a tie!"
+}
+enum SchoolMascotOption {
+    case salamander, marmot, neither
+}
+var salamanderCount = 0
+var marmotCount = 0
+var neitherCount = 0
+for vote in mascotVotes {
+    switch vote {
+    case .salamander: salamanderCount += 1
+    case .marmot: marmotCount += 1
+    case .neither: neitherCount += 1
+    }
+}
+if salamanderCount > marmotCount && salamanderCount > neitherCount {
+    "Salamander wins!"
+} else if marmotCount > salamanderCount && marmotCount > neitherCount {
+    "Marmot wins!"
+} else if neitherCount > salamanderCount && neitherCount > marmotCount {
+    "Neither wins!"
+} else {
+    "Tie!"
+}
+
+
+//page 21
+enum Target {
+    case red, green, blue, gold
+}
+func score(target: Target) -> Int {
+    switch target {
+    case .red: return 10
+    case .green: return 15
+    case .blue: return 25
+    case .gold: return 50
+    }
+}
+score(target: .red)   // 10
+score(target: .green) // 15
+score(target: .blue)  // 25
+score(target: .gold)  // 50
+
+
+
+
+
+
+
+
+
+
 
