@@ -1,0 +1,126 @@
+for value in tabulator.values {
+    print("\(value): \(tabulator.count(forValue: value))")
+}
+
+var tabulator = Tabulator()
+
+for show in randomShowData {
+    tabulator.incrementCount(forValue: show)
+}
+
+for show in showCatalog {
+    let count = tabulator.count(forValue: show)
+    print("\(show): \(count)")
+}
+
+var tabulator = Tabulator()
+
+for show in surveyData {
+    tabulator.incrementCount(forValue: show)
+}
+
+for value in tabulator.values {
+    print("\(value): \(tabulator.count(forValue: value))")
+}
+
+print("\n***** DATA ERRORS *****\n")
+
+var errorCount = 0
+
+for value in tabulator.values {
+    if !showCatalog.contains(value) {
+        errorCount += 1
+        print("\(value): \(tabulator.count(forValue: value))")
+    }
+}
+
+print("\nTotal errors: \(errorCount)")
+
+print("\n***** SECOND CLEANING PASS *****\n")
+print("\n***** TABULATION FOR VALID DATA *****\n")
+
+var tabulator = Tabulator()
+
+var lowercaseCatalog: [String] = []
+for show in showCatalog {
+    lowercaseCatalog.append(show.lowercased())
+}
+
+for raw in surveyData {
+    let cleaned = raw.lowercased()
+    tabulator.incrementCount(forValue: cleaned)
+}
+
+for value in tabulator.values {
+    if lowercaseCatalog.contains(value) {
+        print("\(value): \(tabulator.count(forValue: value))")
+    }
+}
+
+print("\n***** DATA ERRORS *****\n")
+
+var errorCount = 0
+
+for value in tabulator.values {
+    if !lowercaseCatalog.contains(value) {
+        errorCount += 1
+        print("\(value): \(tabulator.count(forValue: value))")
+    }
+}
+
+print("\nTotal errors: \(errorCount)")
+
+print(editDistance(from: "form", to: "from"))
+print(editDistance(from: "cake", to: "bake"))
+print(editDistance(from: "friends", to: "fiends"))
+
+func closestMatch(for value: String, from potentialMatches: [String]) -> String {
+    var bestDistance = Int.max
+    var bestIndex = 0
+
+    for i in 0..<potentialMatches.count {
+        let candidate = potentialMatches[i]
+        let d = editDistance(from: value, to: candidate)
+
+        if d < bestDistance {
+            bestDistance = d
+            bestIndex = i
+        }
+    }
+
+    return potentialMatches[bestIndex]
+}
+
+print("\n***** THIRD CLEANING PASS (SPELLING FIX) *****\n")
+print("\n***** TABULATION FOR VALID DATA *****\n")
+
+var tabulator = Tabulator()
+
+var lowercaseCatalog: [String] = []
+for show in showCatalog {
+    lowercaseCatalog.append(show.lowercased())
+}
+
+var errorCount = 0
+
+for raw in surveyData {
+    let cleaned = raw.lowercased()
+
+    if lowercaseCatalog.contains(cleaned) {
+        tabulator.incrementCount(forValue: cleaned)
+    } else {
+        let corrected = closestMatch(for: cleaned, from: lowercaseCatalog)
+        tabulator.incrementCount(forValue: corrected)
+        errorCount += 1
+    }
+}
+
+for show in lowercaseCatalog {
+    let count = tabulator.count(forValue: show)
+    if count > 0 {
+        print("\(show): \(count)")
+    }
+}
+
+print("\n***** DATA ERRORS (FIXED) *****\n")
+print("Total corrections made: \(errorCount)")
